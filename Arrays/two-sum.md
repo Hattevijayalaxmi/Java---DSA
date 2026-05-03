@@ -1,4 +1,4 @@
-# Two Sum
+#Two Sum (Using HashMap)
 
 ## 📌 Problem Statement
 
@@ -27,14 +27,7 @@ You may assume that each input has exactly one solution, and you cannot use the 
 ## 🧠 Example
 
 ```
-Input: nums = [2, 7, 11, 15], target = 9
-
-Step 1:
-i = 0 → num = 2 → diff = 7 → map = {}
-
-Step 2:
-i = 1 → num = 7 → diff = 2 → 2 is already in map
-
+Input: nums = [2, 7, 11, 15], target = 9  
 Output: [0, 1]
 ```
 
@@ -42,7 +35,7 @@ Output: [0, 1]
 
 ## 💻 Code (Java)
 
-```java
+```Below is the optimized Java solution using HashMap:
 import java.util.HashMap;
 
 class Solution {
