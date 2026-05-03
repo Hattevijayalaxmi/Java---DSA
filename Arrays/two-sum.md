@@ -1,4 +1,4 @@
-#Two Sum (Using HashMap)
+# TWO SUM USING HASHMAP
 
 ## 📌 Problem Statement
 
