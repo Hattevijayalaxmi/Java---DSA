@@ -73,3 +73,7 @@ class Solution {
 * Brute force approach takes O(n²)
 * HashMap gives optimal solution
 * Very common interview question
+
+## ❓ Why HashMap?
+
+Using a HashMap reduces time complexity from O(n²) (brute force) to O(n) by allowing constant-time lookups.
