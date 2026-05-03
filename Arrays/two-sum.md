@@ -73,6 +73,8 @@ class Solution {
 
 Using a HashMap reduces time complexity from O(n²) (brute force) to O(n) by allowing constant-time lookups.
 
+---
+
 ## ✅ Key Points
 
 * Brute force approach takes O(n²)
