@@ -2,7 +2,7 @@
 
 ## 📌 Problem Statement
 
-Given an array of integers 'nums' and an integer 'target' , return the indices of the two numbers such that they add up to the target.
+Given an array of integers `nums` and an integer `target`, return the indices of the two numbers such that they add up to the target.
 
 You may assume that each input has exactly one solution, and you cannot use the same element twice.
 
@@ -10,17 +10,17 @@ You may assume that each input has exactly one solution, and you cannot use the 
 
 ## 💡 Approach (Using HashMap)
 
-* Ek HashMap use karte hain jisme:
+* Use a HashMap to store elements:
 
-  * **key = number**
-  * **value = index**
-* Array ko iterate karte waqt:
+  * **Key = number**
+  * **Value = index**
+* While iterating through the array:
 
-  1. Current element ke liye 'diff = target - nums[i]' calculate karte hain
-  2. Check karte hain ki 'diff' already map me hai ya nahi
+  1. Calculate `diff = target - nums[i]`
+  2. Check if `diff` exists in the map
 
-     * Agar hai → answer mil gaya
-  3. Agar nahi hai → current element ko map me store kar dete hain
+     * If yes → solution found
+  3. If not → store the current element in the map
 
 ---
 
@@ -33,7 +33,7 @@ Step 1:
 i = 0 → num = 2 → diff = 7 → map = {}
 
 Step 2:
-i = 1 → num = 7 → diff = 2 → map me 2 present hai
+i = 1 → num = 7 → diff = 2 → 2 is already in map
 
 Output: [0, 1]
 ```
@@ -42,16 +42,18 @@ Output: [0, 1]
 
 ## ⏱ Time Complexity
 
-* O(n) → array ko ek hi baar traverse karte hain
+* O(n) → traverse the array once
 
 ## 📦 Space Complexity
 
-* O(n) → HashMap me elements store hote hain
+* O(n) → extra space for HashMap
 
 ---
 
 ## ✅ Key Points
 
-* Brute force O(n²) hota hai (avoid karo)
-* HashMap se optimal solution milta hai
+* Brute force approach takes O(n²)
+* HashMap gives optimal solution
+* Very common interview question
+lta hai
 * Interview me yeh bahut common question hai
