@@ -2,7 +2,7 @@
 
 ## 📌 Problem Statement
 
-Given an array of integers `nums` and an integer `target`, return the indices of the two numbers such that they add up to the target.
+Given an array of integers nums & an integer target, return the indices of the two numbers such that they add up to the target.
 
 You may assume that each input has exactly one solution, and you cannot use the same element twice.
 
@@ -16,17 +16,17 @@ You may assume that each input has exactly one solution, and you cannot use the 
   * **Value = index**
 * While iterating through the array:
 
-  1. Calculate `diff = target - nums[i]`
-  2. Check if `diff` exists in the map
+  1. Calculate diff = target - nums[i]
+  2. Check if diff exists in the map
 
-     * If yes → solution found
-  3. If not → store the current element in the map
+* If yes → solution found
+
+  1. If not → store the current element in the map
 
 ---
 
 ## 🧠 Example
 
-```
 Input: nums = [2, 7, 11, 15], target = 9
 
 Step 1:
@@ -36,7 +36,29 @@ Step 2:
 i = 1 → num = 7 → diff = 2 → 2 is already in map
 
 Output: [0, 1]
-```
+
+---
+
+## 💻 Code (Java)
+
+import java.util.HashMap;
+
+import java.util.HashMap; 
+class Solution { 
+    public int[] twoSum(int[] nums, int target) {
+        HashMap<Integer, Integer> map = new HashMap<>(); 
+           for(int i = 0; i < nums.length; i++) { 
+               int diff = target - nums[i]; 
+                if(map.containsKey(diff)) { 
+                     return new int[]{map.get(diff), i}; 
+                     } 
+                     map.put(nums[i], i); 
+                } 
+             return new int[]{}; 
+         } 
+       }
+
+
 
 ---
 
@@ -55,5 +77,3 @@ Output: [0, 1]
 * Brute force approach takes O(n²)
 * HashMap gives optimal solution
 * Very common interview question
-lta hai
-* Interview me yeh bahut common question hai
