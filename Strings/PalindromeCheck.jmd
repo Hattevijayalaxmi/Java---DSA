@@ -1,0 +1,110 @@
+# Palindrome String Check
+
+## 📌 Problem Statement
+
+Given a string, check whether the string is a palindrome or not.
+
+A palindrome is a string that reads the same forward and backward.
+
+---
+
+## 💡 Approach
+
+We reverse the given string and compare it with the original string.
+
+### Steps:
+1. Take string input from the user.
+2. Reverse the string using a loop.
+3. Compare the reversed string with the original string.
+4. If both are equal:
+   - The string is a palindrome.
+5. Otherwise:
+   - The string is not a palindrome.
+
+---
+
+## 🧠 Example
+
+### Input
+```text
+madam
+```
+
+### Output
+```text
+The given String is a Palindrome
+```
+
+### Explanation
+```text
+The reverse of "madam" is also "madam".
+```
+
+---
+
+## 💻 Java Code
+
+```java
+import java.util.Scanner;
+
+public class PalindromeCheck {
+
+    public static void main(String[] args) {
+
+        String inpString, revString = "";
+
+        // Get input from user
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println(
+            "Enter the String to check for Palindrome :"
+        );
+
+        inpString = sc.nextLine();
+
+        // Reverse the input string
+        for (int i = inpString.length() - 1; i >= 0; i--) {
+
+            revString =
+                revString + inpString.charAt(i);
+        }
+
+        // Compare original and reversed string
+        if (inpString.equals(revString)) {
+
+            System.out.println(
+                "The given String is a Palindrome"
+            );
+
+        } else {
+
+            System.out.println(
+                "The given String is not a Palindrome"
+            );
+        }
+
+        sc.close();
+    }
+}
+```
+
+---
+
+## ⏱ Time Complexity
+
+- **O(n)** → Traverse the string once.
+
+---
+
+## 📦 Space Complexity
+
+- **O(n)** → Extra space used for reversed string.
+
+---
+
+## ✅ Key Points
+
+- Simple and beginner-friendly approach
+- Uses string reversal technique
+- Common interview string problem
+- Can also be solved using two-pointer method
