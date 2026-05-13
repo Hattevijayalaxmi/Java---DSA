@@ -5,6 +5,7 @@ This repository contains my Data Structures and Algorithms practice for placemen
 ## 🚀 Topics Covered
 
 * Arrays
+* Strings
 
 ## 📈 Progress
 
