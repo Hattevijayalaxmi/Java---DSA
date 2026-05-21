@@ -6,7 +6,7 @@ This repository contains my Data Structures and Algorithms practice for placemen
 
 * Arrays
 * Strings
-* HashMap / HashSet
+
 
 ## 📈 Progress
 
